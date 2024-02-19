@@ -1,0 +1,5 @@
+# ignore ALL .log files
+*.log
+
+# ignore ALL files in the directory named okx-data-engineering-venv
+okx-data-engineering-venv/
