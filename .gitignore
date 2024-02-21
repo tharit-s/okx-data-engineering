@@ -3,3 +3,6 @@
 
 # ignore ALL files in the directory named okx-data-engineering-venv
 okx-data-engineering-venv/
+
+# ignore ALL files in the directory named data
+data/
