@@ -17,7 +17,7 @@ class TestDataProcessing(unittest.TestCase):
         # expected result
         expected_count_members = limit
         # actual result
-        output_data = get_history_trades(instId=instrument_id, before=start_id, after=end_id)
+        output_data = get_history_trades(instrument_id=instrument_id, start_id=start_id, end_id=end_id)
         actual_count_members = len(output_data["data"])
         self.assertEqual(expected_count_members, actual_count_members)
 
@@ -29,7 +29,7 @@ class TestDataProcessing(unittest.TestCase):
         # expected result
         expected_count_members_removed_exclusive_start_and_end = limit - 2
         # actual result
-        output_data = get_history_trades(instId=instrument_id, before=start_id, after=end_id)
+        output_data = get_history_trades(instrument_id=instrument_id, start_id=start_id, end_id=end_id)
         actual_count_members = len(output_data["data"])
         self.assertEqual(expected_count_members_removed_exclusive_start_and_end, actual_count_members)
 
